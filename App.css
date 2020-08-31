@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(100deg, #060122, #0b0a22);
+  font-family: 'Montserrat', sans-serif;
+  color: #ddd;
+}
+header {
+  background-color: rgb(#060122);
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ddd;
+  width: 50%;
+  margin: auto;
+  border-bottom: 3px solid #999;
+}
+.Balance {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  margin: 3% auto;
+}
+.inc-exp {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: 1.5% auto;
+}
+.income {
+  color: rgb(67, 202, 67);
+}
+.expense {
+  color: rgb(202, 67, 67);
+}
+.addNew {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 2% auto;
+}
+.History {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  margin: auto;
+}
+h2 {
+  font-size: 1rem;
+}
+#balanceMoney {
+  margin-top: 2%;
+  letter-spacing: 1.2px;
+  font-size: 1.6rem;
+}
+.white-balance {
+  color: #ddd;
+}
+.green-balance {
+  color: rgb(67, 202, 67);
+}
+.red-balance {
+  color: rgb(202, 67, 67);
+}
+h5 {
+  margin-top: 10%;
+}
+.input-title {
+  margin-top: 3%;
+  font-size: 0.9rem;
+}
+.neg-pos {
+  margin: 3% 0 0 2%;
+  font-size: 0.9rem;
+}
+li {
+  margin: 1% 0;
+  padding: 2%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  -webkit-box-shadow: 5px 2px 5px 0px rgba(77, 74, 74, 1);
+  -moz-box-shadow: 5px 2px 5px 0px rgba(77, 74, 74, 1);
+  box-shadow: 5px 2px 5px 0px rgba(77, 74, 74, 1);
+}
+.desc-date {
+  display: flex;
+  flex-direction: column;
+}
+.green {
+  background-color: rgb(20, 109, 20);
+}
+.red {
+  background-color: rgb(134, 5, 5);
+}
+.green:hover {
+  background-color: rgb(20, 109, 20, 0.88);
+}
+.red:hover {
+  background-color: rgb(134, 5, 5, 0.88);
+}
+.description {
+  margin-left: 0;
+  margin-bottom: 1rem;
+}
+
+.inputText {
+  margin-top: 2%;
+  padding: 1%;
+  border-radius: 5px;
+  border: none;
+  background-color: #ddd;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.enterAmount {
+  display: flex;
+}
+button {
+  margin: 3% auto 0 auto;
+  padding: 2% 0;
+  width: 200px;
+  font-family: 'Montserrat', sans-serif;
+  color: #060122;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: rgb(199, 199, 11);
+}
+button:hover {
+  background-color: rgb(226, 168, 9);
+}
+.History {
+  display: flex;
+  flex-direction: column;
+}
+ul {
+  margin: 2% 0;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.right {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.remove {
+  font-size: 1rem;
+  cursor: pointer;
+  color: rgb(199, 199, 11);
+}
+.remove:hover {
+  color: rgb(226, 168, 9);
+}
+.amount-list {
+  font-size: 1rem;
+  flex: 0;
+  letter-spacing: 1px;
+}
+@media only screen and (max-width: 1600px) {
+  .enterAmount {
+    flex-direction: column;
+  }
+  .neg-pos {
+    margin-left: 0;
+  }
+  .right {
+    width: 30%;
+  }
+  .date {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  header {
+    width: 85%;
+  }
+  .inc-exp {
+    width: 85%;
+    margin: 5% auto;
+  }
+
+  .History {
+    width: 85%;
+    margin: 5% auto;
+  }
+  .addNew {
+    width: 85%;
+    margin: 5% auto;
+  }
+  .Balance {
+    width: 85%;
+    margin: 5% auto;
+  }
+  .inputText {
+    margin: 5% 0;
+  }
+  .right {
+    width: 40%;
+  }
+  .description {
+    max-width: 50%;
+  }
+  li {
+    margin-bottom: 3%;
+  }
+  .inc-exp-amount {
+    font-size: 1.1rem;
+  }
+}
